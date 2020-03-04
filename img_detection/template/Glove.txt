@@ -1,0 +1,11 @@
+. Word vector algorithms use the context of the words to learn numerical representations for words, so that words used in the same context have similar looking word vectors.
+
+we have to define and complete certain tasks. Here’s a high level list of these tasks.
+
+    Create data tuples of the format [input word, output word], where each word is represented as one-hot vectors, from raw text
+    Define a model that can take in the one-hot vectors as inputs and outputs, to be trained
+    Define a loss function that predict the correct word, which is actually in the context of the input word, to optimize the model
+    Evaluate the model by making sure similar words have similar word vectors
+The advantage of GloVe is that, unlike Word2vec,
+ GloVe does not rely just on local statistics (local context information of words), 
+but incorporates global statistics (word co-occurrence) to obtain word vectors.
